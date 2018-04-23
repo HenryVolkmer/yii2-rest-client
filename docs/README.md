@@ -1,3 +1,3 @@
 Coming soon...
 
-See [Quick start](quickStart.md)
+See [Quick start](docs/quickStart.md)

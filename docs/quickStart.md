@@ -1,5 +1,3 @@
-## Quick Start
-
 Create you own model by extending abstract class chsergey\rest\Model and configure it with API URL and resource name:
 
 ```php
@@ -16,8 +14,6 @@ class Employee extends Model
 	 * @var string
 	 */
 	public static $apiUrl = 'http://server/rest/v1/';
-	public static $apiKey = 'top-secret-api-key-123456';
-
 	/**
 	 * Name of resources collection
 	 * @var string
@@ -28,22 +24,12 @@ class Employee extends Model
 	 * @var string
 	 */
 	public static $primaryKey = 'login';
-
-	/**
-	 * define custom headers
-	 */
-	public static function getRequestHeaders()
-	{
-		return [
-			'Authorization' => static::$apiKey,
-		];
-	}
 }
 ```
 
 Use your model as usual AR-like model.
 
-### Working with single resource
+### Work with single resource
 
 ```php
 $employee = Employee:findOne('employee1');
@@ -69,7 +55,7 @@ $employee->setScenario(Model::SCENARIO_UPDATE); // PUT-request to update
 $employee->save();
 ```
 
-### Working with collection
+### Work with collection
 To get collection:
 ```php
 $employees = Employee::find()->where(['age' => 30])->all();

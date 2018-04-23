@@ -106,11 +106,6 @@ abstract class Model extends \yii\base\Model implements ModelInterface {
 		return static::$resourceName;
 	}
 
-	public static function getRequestHeaders()
-	{
-		return [];
-	}
-
 	/**
 	 * @inheritdoc
 	 * @throws \yii\base\InvalidConfigException
