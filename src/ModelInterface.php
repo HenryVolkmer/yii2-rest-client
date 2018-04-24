@@ -127,7 +127,7 @@ interface ModelInterface {
 	 * @param bool $useForce
 	 * @return Model
 	 */
-	public function setAttributes(array $attributes, $useForce = false);
+	public function setAttributes(array $attributes, $safeOnly=true);
 
 	/**
 	 * Remove attribute
