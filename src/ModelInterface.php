@@ -123,11 +123,11 @@ interface ModelInterface {
 
 	/**
 	 * Model attributes setter
-	 * @param array $attributes
-	 * @param bool $useForce
+	 * @param array $values
+	 * @param bool $safeOnly
 	 * @return Model
 	 */
-	public function setAttributes(array $attributes, $safeOnly=true);
+	public function setAttributes($values, $safeOnly = true);
 
 	/**
 	 * Remove attribute
